@@ -62,6 +62,21 @@ if __name__ == "__main__":
 
 # TODO: Step 8 - Function that prints comma-separated list of movie titles
 def print_movie_titles(movie_list):
+    def print_favorite_movies(movie_list):
+    titles = [movie.title() for movie in movie_list]
+    print(f"Some of my favourite movies are {', '.join(titles[:-1]) + ', and ' if len(titles) > 1 else ''}{titles[-1]}!")
+
+def main():
+    favorite_movies = [
+        "dune",
+        "the hangover",
+        "the lord of the rings"
+    ]
+    print_favorite_movies(favorite_movies)
+
+if __name__ == "__main__":
+    main()
+
     return
     
 if __name__ == '__main__':
