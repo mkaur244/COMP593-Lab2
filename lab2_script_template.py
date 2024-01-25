@@ -32,10 +32,32 @@ def add_pizza_toppings(about_me, toppings):
 
 # TODO: Step 6 - Function that prints bullet list of pizza toppings
 def print_pizza_toppings(about_me):
+    pizza_topping_1:['black olives','garlic','onion']
+    pizza_toppiing_2: ['cheese','mushrooms','pepperoni']
+    pizza_topping_3: ['bacon,onion','tomoto']
+
     return
 
 # TODO: Step 7 - Function that prints comma-separated list of movie genres
 def print_movie_genres(about_me):
+    movie_genres 
+    def print_movie_genres(movie_data):
+    genres = [movie['genre'] for movie in movie_data]
+    print(f"I like to watch {', '.join(genres[:-1]) + ', and ' if len(genres) > 1 else ''}{genres[-1]} movies.")
+
+def main():
+    movies = [
+        {'genre': 'Action'},
+        {'genre': 'Comedy'},
+        {'genre': 'Drama'},
+        {'genre': 'Science Fiction'},
+    ]
+    print_movie_genres(movies)
+
+if __name__ == "__main__":
+    main()
+
+
     return 
 
 # TODO: Step 8 - Function that prints comma-separated list of movie titles
